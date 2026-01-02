@@ -1,3 +1,4 @@
+
 # FakeNews-GNN 🔗
 
 [![Python](https://img.shields.io/badge/Python-3.11-blue)](https://www.python.org/)
@@ -35,3 +36,91 @@ graph TD;
     GNN --> Prediction[Fake / Real];
     News -->|Author / Source| NodeFeature;
 
+
+Mermaid diagram for graph structure visualization. Shows how news text and graph info flow into GNN for predictions.
+
+
+ Tech Stack
+| Technology                  | Purpose                        |
+| --------------------------- | ------------------------------ |
+| Python 3.11                 | Programming                    |
+| PyTorch & PyTorch Geometric | GNN & DL models                |
+| HuggingFace Transformers    | Text embeddings (BERT)         |
+| NetworkX                    | Graph analysis & visualization |
+| Streamlit                   | Interactive demo               |
+| Scikit-learn                | Metrics & evaluation           |
+
+
+ Example Visualization
+graph LR;
+  FakeNews1 --> Author1;
+  FakeNews1 --> Source1;
+  FakeNews2 --> Author2;
+  FakeNews2 --> Source1;
+  Author1 --> Author2;
+
+
+Shows connections between news, authors, and sources in a mini graph example.
+
+ Usage
+
+Install dependencies:
+
+pip install -r requirements.txt
+
+
+Prepare dataset:
+
+Place raw CSV in data/raw/fakenews.csv
+
+Columns: news_id,text,source,author,timestamp,label
+
+Process embeddings and build graph:
+
+from utils.graph_builder import build_graph
+from models.text_embedding import TextEmbedder
+
+
+
+Train model:
+
+python training/train.py
+
+
+Evaluate:
+
+python training/evaluate.py
+
+
+Run Streamlit demo:
+
+streamlit run demo/streamlit_app.py
+
+ Metrics
+
+Accuracy
+
+F1-Score
+
+ROC-AUC
+
+Confusion Matrix for detailed analysis
+
+ Future Work
+
+Temporal Graphs: track news propagation over time
+
+Heterogeneous Graphs: include users, hashtags, comments
+
+Explainable GNN: visualize attention weights for interpretability
+
+Edge Attention: improve model by weighting connections
+
+ License
+
+This project is licensed under Apache 2.0 License - see the LICENSE
+ file for details.
+
+ Note
+
+This project is research and learning-oriented. No real users are targeted, and ethical guidelines are followed.
