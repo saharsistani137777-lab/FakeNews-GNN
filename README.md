@@ -29,7 +29,7 @@
 
 ##  Architecture
 
-```mermaid
+
 graph TD;
     Text[News Text] -->|BERT Embedding| NodeFeature[Node Features];
     NodeFeature --> GNN[Graph Neural Network (GCN / GAT)];
