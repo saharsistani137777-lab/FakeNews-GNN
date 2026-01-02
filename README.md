@@ -25,95 +25,31 @@ streamlit run demo/streamlit_app.py
 ## License
 Apache 2.0
 
-<!-- Architecture Diagram -->
-<div align="center">
+<h3 align="center">Model Performance</h3>
 
-<h3>🧠 Model Architecture Overview</h3>
+<p align="center">
+<svg width="420" height="260" viewBox="0 0 420 260">
+  <!-- Axes -->
+  <line x1="50" y1="20" x2="50" y2="220" stroke="#999"/>
+  <line x1="50" y1="220" x2="380" y2="220" stroke="#999"/>
 
-<div style="
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 24px;
-  font-family: Arial, sans-serif;
-  margin-top: 20px;
-">
+  <!-- Bars -->
+  <rect x="90" y="90" width="60" height="130" fill="#2563EB"/>
+  <rect x="180" y="60" width="60" height="160" fill="#16A34A"/>
+  <rect x="270" y="40" width="60" height="180" fill="#DC2626"/>
 
-  <!-- Input -->
-  <div style="
-    border: 2px solid #4F46E5;
-    border-radius: 12px;
-    padding: 14px 18px;
-    min-width: 160px;
-    text-align: center;
-  ">
-    <b>📰 News Text</b><br/>
-    Author<br/>
-    Source
-  </div>
+  <!-- Labels -->
+  <text x="95" y="240" font-size="12">TF-IDF</text>
+  <text x="175" y="240" font-size="12">BERT</text>
+  <text x="255" y="240" font-size="12">BERT + GNN</text>
 
-  <!-- Arrow -->
-  <div style="font-size: 24px;">➡️</div>
+  <text x="20" y="30" font-size="12">Accuracy</text>
 
-  <!-- Embedding -->
-  <div style="
-    border: 2px solid #16A34A;
-    border-radius: 12px;
-    padding: 14px 18px;
-    min-width: 180px;
-    text-align: center;
-  ">
-    <b>🔤 Text Embedding</b><br/>
-    BERT Encoder
-  </div>
+  <!-- Values -->
+  <text x="100" y="85" font-size="12">0.71</text>
+  <text x="190" y="55" font-size="12">0.82</text>
+  <text x="280" y="35" font-size="12">0.89</text>
+</svg>
+</p>
 
-  <!-- Arrow -->
-  <div style="font-size: 24px;">➡️</div>
-
-  <!-- Graph -->
-  <div style="
-    border: 2px solid #EA580C;
-    border-radius: 12px;
-    padding: 14px 18px;
-    min-width: 200px;
-    text-align: center;
-  ">
-    <b>🔗 Graph Construction</b><br/>
-    News ↔ Author<br/>
-    News ↔ Source
-  </div>
-
-  <!-- Arrow -->
-  <div style="font-size: 24px;">➡️</div>
-
-  <!-- GNN -->
-  <div style="
-    border: 2px solid #DC2626;
-    border-radius: 12px;
-    padding: 14px 18px;
-    min-width: 180px;
-    text-align: center;
-  ">
-    <b> GNN Model</b><br/>
-    GCN / GAT
-  </div>
-
-  <!-- Arrow -->
-  <div style="font-size: 24px;">➡️</div>
-
-  <!-- Output -->
-  <div style="
-    border: 2px solid #0F172A;
-    border-radius: 12px;
-    padding: 14px 18px;
-    min-width: 140px;
-    text-align: center;
-  ">
-    <b> Prediction</b><br/>
-    Real / Fake
-  </div>
-
-</div>
-
-</div>
 
