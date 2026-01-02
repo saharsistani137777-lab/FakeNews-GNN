@@ -1,1 +1,16 @@
+news_id,text,source,author,timestamp,label
+news_id,text,source,author,timestamp,label
+1,"New AI model beats human accuracy in medical diagnosis","TechNews","Alice Smith","2026-01-01",0
+2,"Celebrity endorses miracle weight loss pill, experts warn","HealthDaily","John Doe","2026-01-02",1
+3,"Breakthrough battery technology increases EV range by 50%","AutoWorld","Jane Lee","2026-01-03",0
+4,"Government secretly implants chips in citizens to track them","ConspiracyHub","Mike Brown","2026-01-04",1
+5,"Researchers discover new species of deep-sea jellyfish","ScienceToday","Laura Kim","2026-01-05",0
+6,"Drinking coffee cures all types of cancer, study claims","FakeHealthNews","Tom Wilson","2026-01-06",1
 
+news_id,text,source,author,timestamp,label
+7,"NASA confirms water on Mars in liquid form","SpaceDaily","Emily Clark","2026-01-07",0
+8,"Eating chocolate cures diabetes overnight, doctors shocked","SugarTimes","Chris Johnson","2026-01-08",1
+9,"New vaccine shows 99% effectiveness against common flu","HealthNews","Anna Wong","2026-01-09",0
+10,"Aliens secretly control the stock market, insider claims","ConspiracyWorld","David Kim","2026-01-10",1
+11,"Scientists develop AI that can predict earthquakes","EarthScience","Sophia Patel","2026-01-11",0
+12,"Drinking lemon water can reverse aging completely","FakeWellness","Michael Lee","2026-01-12",1
