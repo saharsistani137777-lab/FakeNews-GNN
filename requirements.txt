@@ -1,0 +1,12 @@
+torch
+torch-geometric
+transformers
+scikit-learn
+pandas
+numpy
+networkx
+matplotlib
+seaborn
+streamlit
+
+
