@@ -1,4 +1,4 @@
-# FakeNews-GNN 📰🔗
+# FakeNews-GNN 🔗
 
 [![Python](https://img.shields.io/badge/Python-3.11-blue)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-1.15-red)](https://pytorch.org/)
